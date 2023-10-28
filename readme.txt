@@ -1,8 +1,8 @@
 === Blockstarter ===
-Contributors: Nasio Themes
-Requires at least: 6.0
-Tested up to: 6.1.4
-Requires PHP: 5.7
+Contributors: nravota12
+Requires at least: 6.1
+Tested up to: 6.3
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -10,17 +10,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Blockstarter is a starter block theme that empowers you to use the latest full site editing experience. No unnecessary code to get in the way. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project.
 
-== Changelog ==
-
-= 1.0.0 =
-* Initial release
-
 == Copyright ==
 
-Blockstarter is based on Pliska FSE (https://github.com/yonkov/pliska-fse), (C) Atanas Yonkov, [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
-
-Pliska FSE WordPress Theme, (C) 2023 
-Pliska FSE is distributed under the terms of the GNU GPL.
+Blockstarter, Copyright 2023 Atanas Yonkov
+Blockstarter is distributed under the terms of the GNU GPLv2 or later
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -32,3 +25,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
+== Changelog ==
+
+= 1.0.0 - October 2023 =
+* Initial release
