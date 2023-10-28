@@ -1,0 +1,14 @@
+@media(min-width:768px){
+	.wp-block-post-template:not(.is-flex-container) .wp-block-post-featured-image {
+		float: left;
+		margin-right: 2rem;
+		width: 39%;
+		clear: both;
+		min-height: 100px;
+	}
+	.wp-block-post-template:not(.is-flex-container) > li::after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+}

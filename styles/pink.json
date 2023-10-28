@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Pink",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#ea4c89"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "#636381"
+				},
+				{
+					"name": "Tertiary",
+					"slug": "tertiary",
+					"color": "#fbf4f8"
+				}
+			]
+		}
+	}
+}
