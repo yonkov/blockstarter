@@ -312,6 +312,14 @@
 					"fontSize": "var(--wp--preset--font-size--medium)",
 					"fontWeight": "var(--wp--custom--font-weight--semi-bold)"
 				}
+			},
+			"core/post-excerpt": {
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--preset--spacing--x-small)",
+						"bottom": "var(--wp--preset--spacing--x-small)"
+					}
+				}
 			}
 		},
 		"elements": {

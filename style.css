@@ -165,7 +165,26 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	padding: var(--wp--preset--spacing--xx-small) !important;
 }
 
-/* Post Author
+/* Header
+--------------------------------------------- */
+.site-header {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Patterns */
+
+.hero-image.wp-block-cover {
+	margin-top: 0;
+}
+
+/* Content
+--------------------------------------------- */
+.hentry .wp-block-post-excerpt__excerpt {
+	margin-top: revert !important;
+	margin-bottom: revert !important;
+}
+
+/* Meta
 --------------------------------------------- */
 
 .wp-block-post-author {
@@ -188,21 +207,8 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	border-radius: 100px;
 }
 
-/* Header
---------------------------------------------- */
-.site-header {
-	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-
 /* Footer
 --------------------------------------------- */
 footer {
 	margin-top: 0 !important;
-}
-
-/* Patterns */
-
-.hero-image.wp-block-cover {
-	margin-top: 0;
 }

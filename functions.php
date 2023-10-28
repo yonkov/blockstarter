@@ -44,7 +44,7 @@ function blockstarter_block_scripts() {
 add_action( 'enqueue_block_assets', 'blockstarter_block_scripts' );
 
 function blockstarter_excerpt_length( $length ) {
-	return 10;
+	return 25;
 }
 add_filter( 'excerpt_length', 'blockstarter_excerpt_length' );
 

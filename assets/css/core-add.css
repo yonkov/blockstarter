@@ -4,9 +4,8 @@
 		margin-right: 2rem;
 		width: 39%;
 		clear: both;
-		min-height: 100px;
 	}
-	.wp-block-post-template:not(.is-flex-container) > li::after {
+	.wp-block-post-template:not(.is-flex-container) > li >div::after {
 		display: table;
 		content: '';
 		clear: both;
