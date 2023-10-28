@@ -212,3 +212,26 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 footer {
 	margin-top: 0 !important;
 }
+
+/*Transparent Header */
+.transparent-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+}
+.transparent-header > .has-background {
+  background: transparent !important;
+}
+.transparent-header .site-header {
+	box-shadow: none;
+}
+.logged-in.admin-bar .transparent-header {
+    top: 32px;
+}
+@media screen and (max-width: 782px) {
+  .logged-in.admin-bar .transparent-header {
+    top: 48px;
+  }
+}
