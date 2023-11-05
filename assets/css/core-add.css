@@ -1,3 +1,5 @@
+/* This stylesheet gets loaded in both frontend and block editor */
+
 @media(min-width:768px){
 	.wp-block-post-template:not(.is-flex-container) .wp-block-post-featured-image {
 		float: left;

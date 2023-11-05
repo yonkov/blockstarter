@@ -1,0 +1,80 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "title": "Grayscale",
+    "settings": {
+      "color": {
+        "defaultPalette": false,
+        "defaultGradients": false,
+        "customDuotone": true,
+        "defaultDuotone": true,
+        "palette": [
+            {
+                "color": "#000000",
+                "name": "Primary",
+                "slug": "primary"
+            },
+            {
+                "color": "#d3d3d3",
+                "name": "Secondary",
+                "slug": "secondary"
+            },
+            {
+                "color": "#ffffff",
+                "name": "Tertiary",
+                "slug": "tertiary"
+            },
+            {
+                "color": "#f9f9f9",
+                "name": "Base",
+                "slug": "base"
+            },
+            {
+                "color": "#262626",
+                "name": "Links",
+                "slug": "custom-links"
+            },
+            {
+                "color": "#666",
+                "name": "Links Hover",
+                "slug": "custom-links-hover"
+            },
+            {
+                "color": "#262626",
+                "name": "Text",
+                "slug": "text-primary"
+            },
+            {
+                "color": "#262626",
+                "name": "Footer",
+                "slug": "footer"
+            },
+            {
+                "name": "Header Image overlay",
+                "color": "#262626",
+                "slug": "header-image-overlay"
+            }
+        ],
+        "duotone": [
+            {
+              "name": "Primary",
+              "slug": "primary",
+              "colors": [
+                "#000000",
+                "#ffffff"
+              ]
+            }
+        ],
+        "gradients": [
+            {
+              "name": "Primary",
+              "slug": "primary",
+              "gradient": "linear-gradient(285deg, #5733FF -1.5%, #354262 100%)"
+            }
+        ]
+      },
+      "custom": {
+        "variation": "grayscale"
+      }
+    }
+  }
