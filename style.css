@@ -61,8 +61,7 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small) !important;
 }
 
-/* Mobile Navigation
---------------------------------------------- */
+/* Mobile Navigation */
 
 .is-menu-open.has-modal-open {
 	padding: var(--wp--preset--spacing--large) var(--wp--preset--spacing--medium) var(--wp--preset--spacing--large) var(--wp--preset--spacing--large);
@@ -130,14 +129,6 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 .wp-block-navigation__responsive-container-open {
 	padding: 4px;
 	border-radius: 3px;
-	background: var(--wp--preset--color--base);
-	color: var(--wp--preset--color--main);
-}
-
-/* Mobile menu close button */
-.wp-block-navigation__responsive-container-close {
-	background: var(--wp--preset--color--tertiary);
-	color: var(--wp--preset--color--main);
 }
 
 .is-menu-open .wp-block-navigation__submenu-container {
@@ -158,12 +149,10 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	padding: var(--wp--preset--spacing--xx-small) !important;
 }
 
-/* Header
---------------------------------------------- */
+/* Header */
 .site-header {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
-
 
 /*Transparent Header */
 .transparent-header {
@@ -189,21 +178,17 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 }
 
 /* Patterns */
-
 .hero-image.wp-block-cover {
 	margin-top: 0;
 }
 
-/* Content
---------------------------------------------- */
+/* Content */
 .hentry .wp-block-post-excerpt__excerpt {
 	margin-top: revert !important;
 	margin-bottom: revert !important;
 }
 
-/* Meta
---------------------------------------------- */
-
+/* Meta */
 .wp-block-post-author {
 	align-items: center;
 }
@@ -224,8 +209,12 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	border-radius: 100px;
 }
 
-/* Footer
---------------------------------------------- */
+/* Footer */
 footer {
 	margin-top: 0 !important;
+}
+
+/* Style Variations */
+.variation-dark .wp-block-site-logo img {
+	filter: var(--wp--preset--duotone--secondary);
 }

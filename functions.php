@@ -50,11 +50,11 @@ add_filter( 'excerpt_length', 'blockstarter_excerpt_length' );
 
 /** Add default theme logo if no logo is specified */
 function blockstarter_get_custom_logo_callback( $html ) {
-    if ( has_custom_logo() ) {
-        return $html;
-    } else {
-        return '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/logo.png">';
-    }
+	if ( has_custom_logo() ) {
+		return $html;
+	} else {
+		return '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/logo.png">';
+	}
 }
 
 add_filter( 'get_custom_logo', 'blockstarter_get_custom_logo_callback' );
@@ -64,7 +64,7 @@ add_filter( 'get_custom_logo', 'blockstarter_get_custom_logo_callback' );
  * Registers block patterns categories, and type.
  */
 
- function blockstarter_register_block_patterns() {
+function blockstarter_register_block_patterns() {
 	$block_pattern_categories = array(
 		'blockstarter' => array( 'label' => esc_html__( 'Blockstarter', 'blockstarter' ) ),
 	);
@@ -82,9 +82,10 @@ add_action( 'init', 'blockstarter_register_block_patterns', 9 );
 
 /* Add custom body class based on style variation */
 function blockstarter_body_classes( $classes ) {
-	$variation_class = wp_get_global_settings( array( 'custom', 'variation' ) );
-	$classes[] = 'variation-' . $variation_class;
-
+	$style_variation = wp_get_global_settings( array( 'custom', 'variation' ) );
+	if ( 'default' !== $style_variation ) {
+		$classes[]       = 'variation-' . $style_variation;
+	}
 	return $classes;
 }
-add_filter( 'body_class','blockstarter_body_classes' );
+add_filter( 'body_class', 'blockstarter_body_classes' );

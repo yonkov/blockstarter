@@ -4,9 +4,6 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
-			"duotone": [],
-            "customDuotone": false,
-            "defaultDuotone": false,
 			"palette": [
 				{
 					"color": "#0b8276",
@@ -44,7 +41,7 @@
 					"slug": "text-primary"
 				},
 				{
-					"color": "#262626",
+					"color": "#181818",
 					"name": "Footer",
 					"slug": "footer"
 				},
@@ -323,7 +320,8 @@
 	},
 	"styles": {
 		"color": {
-			"text": "var(--wp--preset--color--text-primary)"
+			"text": "var(--wp--preset--color--text-primary)",
+			"background": "var(--wp--preset--color--background-primary)"
 		},
 		"blocks": {
 			"core/site-title": {
@@ -459,6 +457,7 @@
 	"templateParts": [
 		{
 			"area": "header",
+			"title": "Header",
 			"name": "header"
 		},
 		{
@@ -468,6 +467,7 @@
 		},
 		{
 			"area": "footer",
+			"title": "Footer",
 			"name": "footer"
 		}
 	]

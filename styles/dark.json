@@ -1,66 +1,63 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
-    "title": "Grayscale",
+    "title": "Dark",
     "settings": {
       "color": {
         "defaultPalette": false,
-        "defaultGradients": false,
-        "customDuotone": true,
-        "defaultDuotone": true,
         "palette": [
             {
-                "color": "#000000",
+                "color": "#0b8276",
                 "name": "Primary",
                 "slug": "primary"
             },
             {
-                "color": "#d3d3d3",
+                "color": "#fbc02d",
                 "name": "Secondary",
                 "slug": "secondary"
             },
             {
-                "color": "#ffffff",
+                "color": "#181818",
                 "name": "Tertiary",
                 "slug": "tertiary"
             },
             {
-                "color": "#f9f9f9",
+                "color": "#262626",
                 "name": "Base",
                 "slug": "base"
             },
             {
-                "color": "#333333",
+                "color": "#fff",
                 "name": "Links",
                 "slug": "custom-links"
             },
             {
-                "color": "#666666",
-                "name": "Links Hover",
-                "slug": "custom-links-hover"
-            },
-            {
-                "color": "#262626",
+                "color": "#fff",
                 "name": "Text",
                 "slug": "text-primary"
             },
             {
-                "color": "#181818",
+                "color": "var(--wp--preset--color--tertiary)",
+                "name": "Background",
+                "slug": "background-primary"
+            },
+            {
+                "color": "#262626",
                 "name": "Footer",
                 "slug": "footer"
             },
             {
                 "name": "Header Image overlay",
-                "color": "transparent",
+                "color": "#000000",
                 "slug": "header-image-overlay"
             }
         ],
         "duotone": [
             {
-              "name": "Primary",
-              "slug": "primary",
+              "name": "Secondary",
+              "slug": "secondary",
               "colors": [
-                "#000000",
+                "#ffffff",
                 "#ffffff"
               ]
             }
@@ -74,7 +71,7 @@
         ]
       },
       "custom": {
-        "variation": "grayscale"
+        "variation": "dark"
       }
     }
   }
