@@ -54,6 +54,14 @@
         ],
         "duotone": [
             {
+              "name": "Primary",
+              "slug": "primary",
+              "colors": [
+                "#000000",
+                "#ffffff"
+              ]
+            },
+            {
               "name": "Secondary",
               "slug": "secondary",
               "colors": [

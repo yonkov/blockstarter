@@ -37,7 +37,8 @@ header .wp-block-navigation .wp-block-navigation__submenu-container {
 	line-height: var(--wp--custom--line-height--initial);
 	border-radius: 5px;
 	min-width: 200px !important;
-	padding: 12px 0;
+	padding-top: .75rem;
+	box-shadow: 1px 3px 8px rgba(0,0,0,.1);
 }
 
 /* Drop nav submenu */
@@ -217,4 +218,9 @@ footer {
 /* Style Variations */
 .variation-dark .wp-block-site-logo img {
 	filter: var(--wp--preset--duotone--secondary);
+}
+
+.variation-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	background-color: var(--wp--preset--color--base);
+	color: #fff;
 }
