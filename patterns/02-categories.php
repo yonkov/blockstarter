@@ -19,7 +19,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-base-background-color has-background" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:heading {"level":3} -->
-<h3>Nature</h3>
+<h3>Outdoors</h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

@@ -4,8 +4,8 @@ Theme URI: https://github.com/yonkov/blockstarter
 Author: Atanas Yonkov
 Author URI: https://nasiothemes.com
 Description: Blockstarter is a starter block theme that empowers you to use the latest full site editing experience. No unnecessary code to get in the way. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project.
-Requires at least: 6.0
-Tested up to: 6.1.4
+Requires at least: 6.1
+Tested up to: 6.4
 Requires PHP: 5.7
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -178,11 +178,6 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	}
 }
 
-/* Patterns */
-.hero-image.wp-block-cover {
-	margin-top: 0;
-}
-
 /* Content */
 .hentry .wp-block-post-excerpt__excerpt {
 	margin-top: revert !important;
@@ -216,11 +211,22 @@ footer {
 }
 
 /* Style Variations */
-.variation-dark .wp-block-site-logo img {
-	filter: var(--wp--preset--duotone--secondary);
-}
-
 .variation-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
 	background-color: var(--wp--preset--color--base);
 	color: #fff;
+}
+.variation-dark .wp-block-site-logo svg path:nth-child(1) {
+	stroke: #fff;
+}
+.variation-dark .wp-block-site-logo svg path:nth-child(2) {
+	fill: #fff;
+}
+
+/* Patterns */
+.hero-image.wp-block-cover {
+	margin-top: 0;
+}
+
+.fullheight {
+	min-height: 100vh;
 }

@@ -5,6 +5,8 @@
     "settings": {
       "color": {
         "defaultPalette": false,
+        "customDuotone": true,
+        "defaultDuotone": true,
         "palette": [
             {
                 "color": "#0b8276",
@@ -60,26 +62,25 @@
                 "#000000",
                 "#ffffff"
               ]
-            },
-            {
-              "name": "Secondary",
-              "slug": "secondary",
-              "colors": [
-                "#ffffff",
-                "#ffffff"
-              ]
-            }
-        ],
-        "gradients": [
-            {
-              "name": "Primary",
-              "slug": "primary",
-              "gradient": "linear-gradient(285deg, #5733FF -1.5%, #354262 100%)"
             }
         ]
       },
       "custom": {
         "variation": "dark"
+      }
+    },
+    "styles": {
+      "blocks": {
+        "core/image": {
+          "filter": {
+            "duotone": "var(--wp--preset--duotone--midnight)"
+          }
+        },
+        "core/cover": {
+          "filter": {
+            "duotone": "var(--wp--preset--duotone--midnight)"
+          }
+        }
       }
     }
   }

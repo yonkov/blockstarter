@@ -49,8 +49,16 @@
 					"name": "Header Image overlay",
 					"color": "transparent",
 					"slug": "header-image-overlay"
+				},
+				{
+					"color": "#fff",
+					"name": "Background",
+					"slug": "background-primary"
 				}
-			]
+			],
+			"duotone": [],
+            "customDuotone": false,
+            "defaultDuotone": true
 		},
 		"custom": {
 			"variation": "default",
@@ -336,16 +344,6 @@
 						"top": "var(--wp--preset--spacing--x-small)",
 						"bottom": "var(--wp--preset--spacing--x-small)"
 					}
-				}
-			},
-			"core/image": {
-				"filter": {
-					"duotone": "var(--wp--preset--duotone--primary)"
-				}
-			},
-			"core/cover": {
-				"filter": {
-					"duotone": "var(--wp--preset--duotone--primary)"
 				}
 			}
 		},

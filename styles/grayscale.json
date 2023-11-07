@@ -5,7 +5,6 @@
     "settings": {
       "color": {
         "defaultPalette": false,
-        "defaultGradients": false,
         "customDuotone": true,
         "defaultDuotone": true,
         "palette": [
@@ -53,28 +52,30 @@
                 "name": "Header Image overlay",
                 "color": "transparent",
                 "slug": "header-image-overlay"
-            }
-        ],
-        "duotone": [
+            },
             {
-              "name": "Primary",
-              "slug": "primary",
-              "colors": [
-                "#000000",
-                "#ffffff"
-              ]
-            }
-        ],
-        "gradients": [
-            {
-              "name": "Primary",
-              "slug": "primary",
-              "gradient": "linear-gradient(285deg, #5733FF -1.5%, #354262 100%)"
+              "color": "#fff",
+              "name": "Background",
+              "slug": "background-primary"
             }
         ]
       },
       "custom": {
         "variation": "grayscale"
+      }
+    },
+    "styles": {
+      "blocks": {
+        "core/image": {
+          "filter": {
+            "duotone": "var(--wp--preset--duotone--grayscale)"
+          }
+        },
+        "core/cover": {
+          "filter": {
+            "duotone": "var(--wp--preset--duotone--grayscale)"
+          }
+        }
       }
     }
   }
