@@ -95,6 +95,9 @@ function blockstarter_register_block_styles() {
 		'core/post-terms' => array(
 			'term-button' => __( 'Button Style', 'blockstarter' ),
 		),
+		'core/query-pagination' => array (
+			'pagination-button' => __( 'Button Style', 'blockstarter' ),
+		),
 	);
 
 	foreach ( $block_styles as $block => $styles ) {

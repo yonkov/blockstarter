@@ -27,6 +27,9 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.0.1 - November 2023 =
+* Add button style for post pagination
+
 = 1.0.0 - November 2023 =
 * Initial release
 
