@@ -37,12 +37,6 @@ function blockstarter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'blockstarter_scripts' );
 
-// Add scripts and styles to the frontend and to the block editor at the same time
-function blockstarter_block_scripts() {
-	wp_enqueue_style( 'blockstarter-block-styles', get_template_directory_uri() . '/assets/css/core-add.css', '', filemtime( get_template_directory() . '/assets/css/core-add.css' ), 'all' );
-}
-add_action( 'enqueue_block_assets', 'blockstarter_block_scripts' );
-
 function blockstarter_excerpt_length( $length ) {
 	return 25;
 }
@@ -53,13 +47,12 @@ function blockstarter_get_custom_logo_callback( $html ) {
 	if ( has_custom_logo() ) {
 		return $html;
 	} else {
-		$logo = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 135.467 135.467" fill="none"><path d="M68.352 56.003L6.616 31.309 68.352 6.615l61.736 24.694-28.768 11.507z" stroke="#262626" stroke-linejoin="round" stroke-width="13.229"/><path d="M9.073 99.25c-3.392-1.356-7.241.294-8.598 3.686s.293 7.241 3.685 8.598zm59.28 30.836l-2.456 6.142c1.577.631 3.336.631 4.912 0zm64.192-18.553c3.392-1.357 5.042-5.207 3.686-8.598s-5.207-5.042-8.598-3.686zM9.073 62.209c-3.392-1.356-7.241.294-8.598 3.686s.293 7.241 3.685 8.598zm59.28 30.836l-2.456 6.142c1.577.631 3.336.631 4.912 0zm64.192-18.553c3.392-1.357 5.042-5.207 3.686-8.598s-5.207-5.042-8.598-3.686zM4.16 111.534l61.736 24.694 4.912-12.284L9.073 99.25zm66.649 24.694l61.736-24.694-4.912-12.284-61.736 24.694zM4.16 74.492l61.736 24.694 4.912-12.284L9.073 62.209zm66.649 24.694l61.736-24.694-4.912-12.284-61.736 24.694z" fill="#262626"/></svg>'; 
+		$logo = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 135.467 135.467" fill="none"><path d="M68.352 56.003L6.616 31.309 68.352 6.615l61.736 24.694-28.768 11.507z" stroke="#262626" stroke-linejoin="round" stroke-width="13.229"/><path d="M9.073 99.25c-3.392-1.356-7.241.294-8.598 3.686s.293 7.241 3.685 8.598zm59.28 30.836l-2.456 6.142c1.577.631 3.336.631 4.912 0zm64.192-18.553c3.392-1.357 5.042-5.207 3.686-8.598s-5.207-5.042-8.598-3.686zM9.073 62.209c-3.392-1.356-7.241.294-8.598 3.686s.293 7.241 3.685 8.598zm59.28 30.836l-2.456 6.142c1.577.631 3.336.631 4.912 0zm64.192-18.553c3.392-1.357 5.042-5.207 3.686-8.598s-5.207-5.042-8.598-3.686zM4.16 111.534l61.736 24.694 4.912-12.284L9.073 99.25zm66.649 24.694l61.736-24.694-4.912-12.284-61.736 24.694zM4.16 74.492l61.736 24.694 4.912-12.284L9.073 62.209zm66.649 24.694l61.736-24.694-4.912-12.284-61.736 24.694z" fill="#262626"/></svg>';
 		return '<a href="' . esc_attr( home_url() ) . '">' . $logo . '</a>';
 	}
 }
 
 add_filter( 'get_custom_logo', 'blockstarter_get_custom_logo_callback' );
-
 
 /**
  * Registers block patterns categories, and type.
@@ -78,15 +71,68 @@ function blockstarter_register_block_patterns() {
 		}
 	}
 }
-
 add_action( 'init', 'blockstarter_register_block_patterns', 9 );
 
-/* Add custom body class based on style variation */
+/* Add custom body class based on the active style variation */
 function blockstarter_body_classes( $classes ) {
 	$style_variation = wp_get_global_settings( array( 'custom', 'variation' ) );
 	if ( 'default' !== $style_variation ) {
-		$classes[]       = 'variation-' . $style_variation;
+		$classes[] = 'variation-' . $style_variation;
 	}
 	return $classes;
 }
 add_filter( 'body_class', 'blockstarter_body_classes' );
+
+/**
+ * Add block style variations.
+ */
+function blockstarter_register_block_styles() {
+
+	$block_styles = array(
+		'core/query'     => array(
+			'left-featured-image'   => __( 'Left Featured Image', 'blockstarter' ),
+		),
+		'core/post-terms' => array(
+			'term-button' => __( 'Button Style', 'blockstarter' ),
+		),
+	);
+
+	foreach ( $block_styles as $block => $styles ) {
+		foreach ( $styles as $style_name => $style_label ) {
+			register_block_style(
+				$block,
+				array(
+					'name'  => $style_name,
+					'label' => $style_label,
+				)
+			);
+		}
+	}
+}
+add_action( 'init', 'blockstarter_register_block_styles' );
+
+/**
+ * Load custom block styles only when the block is used.
+ */
+function blockstarter_enqueue_custom_block_styles() {
+
+	// Scan our css folder to locate block styles.
+	$files = glob( get_template_directory() . '/assets/css/*.css' );
+
+	foreach ( $files as $file ) {
+
+		// Get the filename and core block name.
+		$filename   = basename( $file, '.css' );
+		$block_name = str_replace( 'core-', 'core/', $filename );
+
+		wp_enqueue_block_style(
+			$block_name,
+			array(
+				'handle' => "blockstarter-block-{$filename}",
+				'src'    => get_theme_file_uri( "assets/css/{$filename}.css" ),
+				'path'   => get_theme_file_path( "assets/css/{$filename}.css" ),
+			)
+		);
+	}
+}
+add_action( 'init', 'blockstarter_enqueue_custom_block_styles' );

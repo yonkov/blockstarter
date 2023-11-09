@@ -1,0 +1,16 @@
+@media(min-width:768px){
+	.is-style-left-featured-image .wp-block-post-template:not(.is-flex-container) .wp-block-post-featured-image {
+		float: left;
+		margin-right: 2rem;
+		width: 39%;
+		clear: both;
+	}
+    .is-style-left-featured-image .wp-block-post-template:not(.is-flex-container) .wp-block-post-featured-image img {
+        height: 320px;
+    }
+	.is-style-left-featured-image .wp-block-post-template:not(.is-flex-container) > li >div::after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+}
