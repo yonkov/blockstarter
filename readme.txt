@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Blockstarter is a starter block theme that empowers you to take advantage of the latest full site editing experience in WordPress. No unnecessary code to slow you down - only core Gutenberg blocks have been used. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old Classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project.
+Blockstarter is a lightweight starter block theme. It empowers you to take advantage of the latest full site editing experience in WordPress. The theme is extremely lightweight - only 23KB compressed file size without the fonts and images. No additional libraries or any unnecessary code to slow you down - only core Gutenberg blocks have been used. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old Classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project. Theme demo: https://blockstarter-demo.nasiothemes.com/
 
 == Copyright ==
 

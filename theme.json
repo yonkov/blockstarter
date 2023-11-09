@@ -345,6 +345,11 @@
 						"bottom": "var(--wp--preset--spacing--x-small)"
 					}
 				}
+			},
+			"core/columns": {
+				"spacing": {
+					"blockGap": "1.5rem"
+				}
 			}
 		},
 		"elements": {
