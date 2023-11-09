@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Blockstarter is a starter block theme that empowers you to use the latest full site editing experience. No unnecessary code to get in the way. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project.
+Blockstarter is a starter block theme that empowers you to take advantage of the latest full site editing experience in WordPress. No unnecessary code to slow you down - only core Gutenberg blocks have been used. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old Classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project.
 
 == Copyright ==
 
@@ -29,3 +29,10 @@ GNU General Public License for more details.
 
 = 1.0.0 - November 2023 =
 * Initial release
+
+== Credits ==
+* Based on Create Block Theme https://wordpress.org/plugins/create-block-theme/, (C) 2022-present WordPress.org, License [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+
+== Resources ==
+All Illustrations by Ana Stoyanova https://nasiothemes.com/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+Theme Logo by Atanas Yonkov https://nasiothemes.com/, Copyright (c) 2023 Atanas Yonkov, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
