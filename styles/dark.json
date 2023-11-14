@@ -76,9 +76,25 @@
             "duotone": "var(--wp--preset--duotone--midnight)"
           }
         },
+        "core/post-featured-image": {
+          "filter": {
+            "duotone": "var(--wp--preset--duotone--midnight)"
+          }
+        },
         "core/cover": {
           "filter": {
             "duotone": "var(--wp--preset--duotone--midnight)"
+          }
+        }
+      },
+      "elements": {
+        "button": {
+          "color": {
+            "background": "var(--wp--preset--color--tertiary)"
+          },
+          "border": {
+            "width": "1px",
+            "radius": "4px"
           }
         }
       }

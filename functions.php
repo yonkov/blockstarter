@@ -73,7 +73,7 @@ function blockstarter_register_block_patterns() {
 }
 add_action( 'init', 'blockstarter_register_block_patterns', 9 );
 
-/* Add custom body class based on the active style variation */
+/* Add custom body class based on the style variation */
 function blockstarter_body_classes( $classes ) {
 	$style_variation = wp_get_global_settings( array( 'custom', 'variation' ) );
 	if ( 'default' !== $style_variation ) {
@@ -97,7 +97,7 @@ function blockstarter_register_block_styles() {
 		),
 		'core/query-pagination' => array (
 			'pagination-button' => __( 'Button Style', 'blockstarter' ),
-		),
+		)
 	);
 
 	foreach ( $block_styles as $block => $styles ) {

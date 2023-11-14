@@ -205,11 +205,6 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	border-radius: 100px;
 }
 
-/* Footer */
-footer {
-	margin-top: 0 !important;
-}
-
 /* Style Variations */
 .variation-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
 	background-color: var(--wp--preset--color--base);
@@ -220,6 +215,11 @@ footer {
 }
 .variation-dark .wp-block-site-logo svg path:nth-child(2) {
 	fill: #fff;
+}
+
+.variation-dark #comment {
+	background-color: var(--wp--preset--color--tertiary);
+	color: var(--wp--preset--color--white);
 }
 
 /* Patterns */
@@ -233,4 +233,9 @@ footer {
 
 .pattern-categories a {
 	text-decoration: none;
+}
+
+/* Footer */
+footer {
+	margin-top: 0 !important;
 }

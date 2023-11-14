@@ -2,7 +2,7 @@
 .is-style-pagination-button .wp-block-query-pagination-numbers .page-numbers:hover, 
 .is-style-pagination-button .wp-block-query-pagination-numbers .page-numbers.current {
 	display: inline-block;
-	background-color: #fff;
+	background-color: var(--wp--preset--color--base);
 	width: 42px;
 	text-align: center;
 	height: 42px;
@@ -19,4 +19,9 @@
 .is-style-pagination-button .wp-block-query-pagination-numbers .page-numbers.current {
 	background-color: var(--wp--preset--color--primary);
 	color: #fff;
+}
+
+.variation-dark .is-style-pagination-button .wp-block-query-pagination-numbers .page-numbers:hover,
+.variation-dark .is-style-pagination-button .wp-block-query-pagination-numbers .page-numbers.current {
+	filter: var(--wp--preset--duotone--midnight);
 }
