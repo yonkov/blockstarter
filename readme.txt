@@ -1,5 +1,6 @@
 === Blockstarter ===
 Contributors: nravota12
+Tags: blog, education, photography, one-column, two-columns, three-columns, wide-blocks, block-patterns, block-styles, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, sticky-post, style-variations, translation-ready
 Requires at least: 6.1
 Tested up to: 6.4
 Requires PHP: 5.6
@@ -8,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Blockstarter is a lightweight starter block theme. It empowers you to take advantage of the latest full site editing experience in WordPress. The theme is extremely lightweight - only 23KB compressed file size without the fonts and images. No additional libraries or any unnecessary code to slow you down - only core Gutenberg blocks have been used. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old Classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project. Theme demo: https://blockstarter-demo.nasiothemes.com/ Theme documentation: https://nasiothemes.com/blockstarter-theme-documentation/
+Blockstarter is a lightweight starter block theme. It empowers you to take advantage of the latest full site editing experience in WordPress. The theme is extremely lightweight - only 30KB compressed file size without the fonts and images. No additional libraries or any unnecessary code to slow you down - only core Gutenberg blocks have been used. At the same time, we have made sure the theme is compatible with all the popular plugins and it even supports the good old Classic editor. Feel free to modify it, use it to learn how to create your own block theme or design your next awesome project. Theme demo: https://blockstarter-demo.nasiothemes.com/ Theme documentation: https://nasiothemes.com/blockstarter-theme-documentation/
 
 == Copyright ==
 
@@ -28,7 +29,7 @@ GNU General Public License for more details.
 == Changelog ==
 
 = 1.0.1 - November 2023 =
-* Add button style for post pagination and improve variations
+* Add page with sidebar template, add button style for post pagination and improve variations
 
 = 1.0.0 - November 2023 =
 * Initial release

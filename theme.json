@@ -114,12 +114,12 @@
 				},
 				{
 					"name": "Small",
-					"size": "calc(var(--wp--preset--font-size--medium,1rem)*1.5)",
+					"size": "clamp(var(--wp--preset--font-size--medium), 4vw, calc(var(--wp--preset--font-size--medium,1rem)*1.5))",
 					"slug": "small"
 				},
 				{
 					"name": "Medium",
-					"size": "calc(var(--wp--preset--font-size--medium,1rem)*2)",
+					"size": "clamp(var(--wp--preset--font-size--medium), 4vw, calc(var(--wp--preset--font-size--medium,1rem)*2))",
 					"slug": "medium"
 				},
 				{

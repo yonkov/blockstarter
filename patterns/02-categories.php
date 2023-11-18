@@ -8,7 +8,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"0","bottom":"var:preset|spacing|large"}}},"className":"pattern-categories","layout":{"type":"constrained"}} -->
 <div class="wp-block-group pattern-categories" style="padding-right:0;padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:heading -->
-<h2>Post Categories</h2>
+<h2><?php esc_html_e( 'Post Categories ', 'blockstarter' )?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns -->
@@ -19,7 +19,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-base-background-color has-background" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|text-primary"}}}}} -->
-<h3 class="has-link-color"><a href="#">Outdoors</a></h3>
+<h3 class="has-link-color"><a href="#"><?php esc_html_e( 'Outdoors', 'blockstarter' )?></a></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -31,7 +31,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-base-background-color has-background" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|text-primary"}}}}} -->
-<h3 class="has-link-color"><a href="#">Mountains</a></h3>
+<h3 class="has-link-color"><a href="#"><?php esc_html_e( 'Mountains', 'blockstarter' )?></a></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -43,7 +43,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-base-background-color has-background" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|text-primary"}}}}} -->
-<h3 class="has-link-color"><a href="#">Guides</a></h3>
+<h3 class="has-link-color"><a href="#"><?php esc_html_e( 'Guides', 'blockstarter' )?></a></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

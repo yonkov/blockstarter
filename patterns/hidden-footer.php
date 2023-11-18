@@ -147,12 +147,17 @@
 		<div class="wp-block-group has-main-accent-color has-text-color has-link-color">
 			<!-- wp:paragraph {"textColor":"white","fontSize":"small"} -->
 			<p class="has-white-color has-text-color has-small-font-size">
-				<?php esc_html_e( 'Designed by', 'blockstarter' ); ?> <a href="https://nasiothemes.com"><?php esc_html_e( 'Nasio Themes', 'blockstarter' ); ?></a>
+				<?php esc_html_e( 'Designed by ', 'blockstarter' ); 
+				printf('<a href="%1$s">', 'https://nasiothemes.com');
+				esc_html_e( 'Nasio Themes', 'blockstarter' ); ?></a>
 			</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"textColor":"white","fontSize":"small"} -->
 			<p class="has-white-color has-text-color has-small-font-size">
-				<?php esc_html_e( 'Powered by', 'blockstarter' ); ?> <a href="https://wordpress.org"><?php esc_html_e( 'WordPress', 'blockstarter' ); ?></a>
+				<?php esc_html_e( 'Powered by', 'blockstarter' );?> 
+				<a href="https://wordpress.org">
+					<?php esc_html_e( 'WordPress', 'blockstarter' );?>
+				</a>
 			</p>
 			<!-- /wp:paragraph -->
 		</div>
