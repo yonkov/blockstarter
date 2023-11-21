@@ -1,6 +1,16 @@
 {
 	"version": 2,
 	"$schema": "https://schemas.wp.org/wp/6.1/theme.json",
+	"customTemplates": [
+		{
+			"name": "page-with-sidebar",
+			"title": "Page (With Sidebar)",
+			"postTypes": [
+				"post",
+				"page"
+			]
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {

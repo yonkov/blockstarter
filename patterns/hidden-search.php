@@ -11,7 +11,7 @@
 <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} -->
 <div class="wp-block-group"><!-- wp:query-title {"type":"search"} /-->
 
-<!-- wp:search {"label":"","placeholder":"Search site...","width":50,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true} /--></div>
+<!-- wp:search {"label":"","placeholder":"<?php esc_html_e( 'Search site...', 'blockstarter' ); ?>","width":50,"widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'blockstarter' ); ?>","buttonUseIcon":true} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 

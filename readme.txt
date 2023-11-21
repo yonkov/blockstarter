@@ -28,6 +28,9 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.0.2 - November 2023 =
+* Remove site tagline from header and add padding to menu items
+
 = 1.0.1 - November 2023 =
 * Add page with sidebar template, add button style for post pagination and improve variations
 
