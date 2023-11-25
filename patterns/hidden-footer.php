@@ -42,7 +42,7 @@
 			<!-- /wp:social-links -->
 			<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|small","top":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--small)">
-				<!-- wp:search {"label":"","placeholder":"Search here..","width":50,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true} /-->
+				<!-- wp:search {"label":"","placeholder":"Search here..","width":null,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true} /-->
 			</div>
 			<!-- /wp:group -->
 		</div>

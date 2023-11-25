@@ -465,7 +465,11 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "1rem"
+			"blockGap": "1rem",
+			"padding": {
+                "right": "var(--wp--preset--spacing--x-small)",
+                "left": "var(--wp--preset--spacing--x-small)"
+            }
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)",

@@ -6,8 +6,8 @@
  */
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","bottom":"var:preset|spacing|large"}}},"className":"pattern-categories","layout":{"type":"constrained"}} -->
-<div class="wp-block-group pattern-categories" style="padding-right:0;padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:heading -->
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}},"className":"pattern-categories","layout":{"type":"constrained"}} -->
+<div class="wp-block-group pattern-categories" style="padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:heading -->
 <h2><?php esc_html_e( 'Post Categories ', 'blockstarter' )?></h2>
 <!-- /wp:heading -->
 
