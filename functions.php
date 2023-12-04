@@ -89,15 +89,15 @@ add_filter( 'body_class', 'blockstarter_body_classes' );
 function blockstarter_register_block_styles() {
 
 	$block_styles = array(
-		'core/query'     => array(
-			'left-featured-image'   => __( 'Left Featured Image', 'blockstarter' ),
+		'core/query'            => array(
+			'left-featured-image' => __( 'Left Featured Image', 'blockstarter' ),
 		),
-		'core/post-terms' => array(
+		'core/post-terms'       => array(
 			'term-button' => __( 'Button Style', 'blockstarter' ),
 		),
-		'core/query-pagination' => array (
+		'core/query-pagination' => array(
 			'pagination-button' => __( 'Button Style', 'blockstarter' ),
-		)
+		),
 	);
 
 	foreach ( $block_styles as $block => $styles ) {
@@ -139,40 +139,3 @@ function blockstarter_enqueue_custom_block_styles() {
 	}
 }
 add_action( 'init', 'blockstarter_enqueue_custom_block_styles' );
-
-/**
- * Display the admin notice.
- */
-function blockstarter_admin_notice() {
-	global $current_user;
-	$user_id = $current_user->ID;
-
-	if ( ! get_user_meta( $user_id, 'blockstarter_ignore_customizer_notice' ) ) {
-		?>
-
-		<div class="notice notice-info">
-			<p>
-				<strong>New!</strong> If you like the free version of the theme, you are gonna love the Pro version - <a target="_blank" href="https://nasiothemes.com/themes/blockstarter">Upgrade Now</a>
-				<span style="float:right">
-					<a href="?blockstarter_ignore_customizer_notice=0"><?php esc_html_e( 'Hide Notice', 'blockstarter' ); ?></a>
-				</span>
-			</p>
-		</div>
-
-		<?php
-	}
-}
-add_action( 'admin_notices', 'blockstarter_admin_notice' );
-
-/**
- * Dismiss the admin notice.
- */
-function blockstarter_dismiss_admin_notice() {
-	global $current_user;
-	$user_id = $current_user->ID;
-	/* If user clicks to ignore the notice, add that to their user meta */
-	if ( isset( $_GET['blockstarter_ignore_customizer_notice'] ) && '0' === $_GET['blockstarter_ignore_customizer_notice'] ) {
-		add_user_meta( $user_id, 'blockstarter_ignore_customizer_notice', 'true', true );
-	}
-}
-add_action( 'admin_init', 'blockstarter_dismiss_admin_notice' );

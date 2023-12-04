@@ -28,8 +28,14 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.0.5 - December 2023 =
+* Fix code block overflow
+
+= 1.0.4 - November 2023 =
+* Make sure site meta stays at the same line on desktop
+
 = 1.0.3 - November 2023 =
-* Add post navigation and link post author to author archives. Use has-global-padding classname. Clean up css code.
+* Add post navigation and link post author to author archives. Use has-global-padding classname. Clean up css code
 
 = 1.0.2 - November 2023 =
 * Remove site tagline from header and add padding to menu items

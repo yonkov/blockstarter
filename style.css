@@ -7,7 +7,7 @@ Description: Blockstarter is a lightweight starter block theme. It empowers you 
 Requires at least: 6.1
 Tested up to: 6.4
 Requires PHP: 5.6
-Version: 1.0.3
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: blockstarter
@@ -157,6 +157,14 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 	margin-bottom: revert !important;
 }
 
+pre {
+	overflow: auto;
+}
+
+.wp-caption {
+	max-width: 100% !important;
+}
+
 /* Meta */
 .wp-block-post-author {
 	align-items: center;
@@ -220,6 +228,9 @@ footer {
 	}
 	header nav {
 		padding-right: var(--wp--preset--spacing--medium);
+	}
+	.is-content-justification-space-between .site-meta {
+		flex: 0 0 25%;
 	}
 	footer .wp-block-search__inside-wrapper {
 		width: 50%;
