@@ -139,3 +139,40 @@ function blockstarter_enqueue_custom_block_styles() {
 	}
 }
 add_action( 'init', 'blockstarter_enqueue_custom_block_styles' );
+
+/**
+ * Display the admin notice.
+ */
+function blockstarter_admin_notice() {
+	global $current_user;
+	$user_id = $current_user->ID;
+
+	if ( ! get_user_meta( $user_id, 'blockstarter_ignore_customizer_notice' ) ) {
+		?>
+
+		<div class="notice notice-info">
+			<p>
+				<?php esc_html_e( 'If you like the free version of Blockstarter theme, you are gonna love the Pro version!', 'blockstarter' ); ?> <a target="_blank" href="https://nasiothemes.com/themes/blockstarter"><?php esc_html_e( 'Compare plans', 'blockstarter' ); ?></a>
+				<span style="float:right">
+					<a href="?blockstarter_ignore_customizer_notice=0"><?php esc_html_e( 'Hide Notice', 'blockstarter' ); ?></a>
+				</span>
+			</p>
+		</div>
+
+		<?php
+	}
+}
+add_action( 'admin_notices', 'blockstarter_admin_notice' );
+
+/**
+ * Dismiss the admin notice.
+ */
+function blockstarter_dismiss_admin_notice() {
+	global $current_user;
+	$user_id = $current_user->ID;
+	/* If user clicks to ignore the notice, add that to their user meta */
+	if ( isset( $_GET['blockstarter_ignore_customizer_notice'] ) && '0' === $_GET['blockstarter_ignore_customizer_notice'] ) {
+		add_user_meta( $user_id, 'blockstarter_ignore_customizer_notice', 'true', true );
+	}
+}
+add_action( 'admin_init', 'blockstarter_dismiss_admin_notice' );

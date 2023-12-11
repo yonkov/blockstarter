@@ -28,6 +28,9 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.0.6 - December 2023 =
+* Update docs
+
 = 1.0.5 - December 2023 =
 * Fix code block overflow
 
