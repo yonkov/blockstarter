@@ -1,6 +1,7 @@
 @media(min-width:768px){
 	.is-style-left-featured-image .wp-block-post-template:not(.is-flex-container):not(.is-layout-grid) .wp-block-post-featured-image {
 		float: left;
+		margin-top: 1rem;
 		margin-right: 2rem;
 		width: 39%;
 		clear: both;

@@ -32,7 +32,7 @@ function blockstarter_scripts() {
 	wp_enqueue_style( 'blockstarter-styles', get_theme_file_uri( '/style.css' ), array(), $version );
 
 	if ( is_rtl() ) {
-		wp_enqueue_style( 'rtl-css', get_template_directory_uri() . '/assets/css/rtl.css', 'rtl_css' );
+		wp_enqueue_style( 'rtl-css', get_template_directory_uri() . '/assets/css/rtl.css', 'rtl_css', $version );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'blockstarter_scripts' );

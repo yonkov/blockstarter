@@ -13,7 +13,7 @@ Blockstarter is a lightweight starter block theme. It empowers you to take advan
 
 == Copyright ==
 
-Blockstarter, Copyright 2023 Atanas Yonkov
+Blockstarter, Copyright 2023 — present Atanas Yonkov
 Blockstarter is distributed under the terms of the GNU GPLv2 or later
 
 This program is free software: you can redistribute it and/or modify
@@ -27,6 +27,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.0.7 - February 2023 =
+* Update rtl layout and add top margin to featured image
 
 = 1.0.6 - December 2023 =
 * Update docs
@@ -50,8 +53,8 @@ GNU General Public License for more details.
 * Initial release
 
 == Credits ==
-* Based on Create Block Theme https://wordpress.org/plugins/create-block-theme/, (C) 2022-present WordPress.org, License [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Based on Create Block Theme https://wordpress.org/plugins/create-block-theme/, (C) 2022 — present WordPress.org, License [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
 == Resources ==
-All Illustrations by Ana Stoyanova https://nasiothemes.com/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
-Theme Logo by Atanas Yonkov https://nasiothemes.com/, Copyright (c) 2023 Atanas Yonkov, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+All Illustrations by Ana Stoyanova https://nasiothemes.com/, Copyright (c) 2023 — present Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+Theme Logo by Atanas Yonkov https://nasiothemes.com/, Copyright (c) 2023 — present Atanas Yonkov, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
