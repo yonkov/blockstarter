@@ -140,39 +140,66 @@ function blockstarter_enqueue_custom_block_styles() {
 }
 add_action( 'init', 'blockstarter_enqueue_custom_block_styles' );
 
-/**
- * Display the admin notice.
- */
-function blockstarter_admin_notice() {
+// Add scripts and styles for backend
+function blockstarter_scripts_admin( $hook ) {
+	// Styles
+	wp_enqueue_style(
+		'blockstarter-style-admin',
+		get_template_directory_uri() . '/admin/css/admin.css',
+		'',
+		filemtime( get_template_directory() . '/admin/css/admin.css' ),
+		'all'
+	);
+}
+add_action( 'admin_enqueue_scripts', 'blockstarter_scripts_admin' );
+
+
+function blockstarter_call_to_action_markup() {
+
 	global $current_user;
 	$user_id = $current_user->ID;
+	$theme_homepage = 'https://nasiothemes.com/themes/blockstarter';
 
-	if ( ! get_user_meta( $user_id, 'blockstarter_ignore_customizer_notice' ) ) {
-		?>
+	if ( ! get_user_meta( $user_id, 'blockstarter_hide_notice' ) ) : ?>
+	<div id="message" class="notice notice-success nasiothemes-notice nasiothemes-welcome-notice">
+		<a class="nasiothemes-message-close notice-dismiss" href="?blockstarter_hide_notice=0"></a>
 
-		<div class="notice notice-info">
-			<p>
-				<?php esc_html_e( 'If you like the free version of Blockstarter theme, you are gonna love the Pro version!', 'blockstarter' ); ?> <a target="_blank" href="https://nasiothemes.com/themes/blockstarter"><?php esc_html_e( 'Compare plans', 'blockstarter' ); ?></a>
-				<span style="float:right">
-					<a href="?blockstarter_ignore_customizer_notice=0"><?php esc_html_e( 'Hide Notice', 'blockstarter' ); ?></a>
-				</span>
-			</p>
-		</div>
+		<div class="nasiothemes-message-content">
+			<div class="nasiothemes-message-image">
+				<a href="<?php echo esc_url( $theme_homepage );?>"><img class="nasiothemes-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/admin/images/theme-logo.jpg" alt="<?php echo esc_attr__( 'Blockstarter', 'blockstarter' ); ?>" /></a>
+			</div>
 
-		<?php
-	}
+			<div class="nasiothemes-message-text">
+				<h2 class="nasiothemes-message-heading"><?php echo esc_html__( 'Thank you for choosing Blockstarter!', 'blockstarter' ); ?></h2>
+				<?php
+				echo '<p>';
+					/* translators: %1$s link */
+					printf( __( 'To take advantage of everything that this theme can offer, please take a look at the <a href="%1$s">Get Started with Blockstarter</a> page.', 'blockstarter' ), esc_url( $theme_homepage ) );
+				echo '</p>';
+
+				echo '<p class="notice-buttons"><a href="'. esc_url( $theme_homepage ) .'" target="_blank" rel="noopener" class="button button-primary">';
+
+				echo esc_html__( 'Get started with Blockstarter', 'blockstarter' );
+				echo '</a>';
+				echo ' <a href="' . esc_url( admin_url( 'site-editor.php' ) ) . '" target="_blank" rel="noopener" class="button button-primary nasiothemes-button"><span class="dashicons dashicons-admin-generic"></span> ';
+				echo esc_html__( 'Theme Options', 'blockstarter' );
+				echo '</a></p>';
+				?>
+			</div><!-- .nasiothemes-message-text -->
+		</div><!-- .nasiothemes-message-content -->
+	</div><!-- #message -->
+
+	<?php
+	endif;
 }
-add_action( 'admin_notices', 'blockstarter_admin_notice' );
 
-/**
- * Dismiss the admin notice.
- */
+add_action( 'admin_notices', 'blockstarter_call_to_action_markup' );
+
 function blockstarter_dismiss_admin_notice() {
 	global $current_user;
 	$user_id = $current_user->ID;
-	/* If user clicks to ignore the notice, add that to their user meta */
-	if ( isset( $_GET['blockstarter_ignore_customizer_notice'] ) && '0' === $_GET['blockstarter_ignore_customizer_notice'] ) {
-		add_user_meta( $user_id, 'blockstarter_ignore_customizer_notice', 'true', true );
+	if ( isset( $_GET['blockstarter_hide_notice'] ) && '0' === $_GET['blockstarter_hide_notice'] ) {
+		add_user_meta( $user_id, 'blockstarter_hide_notice', 'true', true );
 	}
 }
 add_action( 'admin_init', 'blockstarter_dismiss_admin_notice' );

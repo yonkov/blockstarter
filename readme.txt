@@ -28,6 +28,15 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.1.0 - February 2023 =
+* Fix translate warning
+
+= 1.0.9 - February 2023 =
+* Update theme info
+
+= 1.0.8 - February 2023 =
+* Update call to action
+
 = 1.0.7 - February 2023 =
 * Update rtl layout and add top margin to featured image
 
