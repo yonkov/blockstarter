@@ -29,7 +29,7 @@ add_action( 'after_setup_theme', 'blockstarter_setup' );
 function blockstarter_scripts() {
 	$version = wp_get_theme( 'blockstarter' )->get( 'Version' );
 	// Stylesheet
-	wp_enqueue_style( 'blockstarter-styles', get_theme_file_uri( '/style.css' ), array(), $version );
+	wp_enqueue_style( 'blockstarter-styles', get_template_directory_uri() . '/style.css', array(), $version );
 
 	if ( is_rtl() ) {
 		wp_enqueue_style( 'rtl-css', get_template_directory_uri() . '/assets/css/rtl.css', 'rtl_css', $version );

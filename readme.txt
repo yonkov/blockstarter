@@ -28,6 +28,9 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.1.1 - February 2023 =
+* Fix the way parent stylesheet gets loaded
+
 = 1.1.0 - February 2023 =
 * Fix translate warning
 
