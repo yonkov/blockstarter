@@ -372,7 +372,7 @@
 		"elements": {
 			"button": {
 				"color": {
-					"background": "#0b8276"
+					"background": "var(--wp--preset--color--primary)"
 				},
 				"typography": {
 					"lineHeight": "var(--wp--custom--line-height--normal)"
