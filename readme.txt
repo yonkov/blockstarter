@@ -28,6 +28,16 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+
+= 1.1.5 - July 2024 =
+* Update docs
+
+= 1.1.4 - April 2024 =
+* Fix alignfull class
+
+= 1.1.3 - March 2024 =
+* Fix page sidebar template not displaying in a child theme
+
 = 1.1.2 - March 2024 =
 * Remove hardcoded background color for buttons
 
