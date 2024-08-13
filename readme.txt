@@ -28,6 +28,8 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 1.1.6 - August 2024 =
+* Fix rtl styles
 
 = 1.1.5 - July 2024 =
 * Update docs

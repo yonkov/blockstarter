@@ -30,10 +30,6 @@ function blockstarter_scripts() {
 	$version = wp_get_theme( 'blockstarter' )->get( 'Version' );
 	// Stylesheet
 	wp_enqueue_style( 'blockstarter-styles', get_template_directory_uri() . '/style.css', array(), $version );
-
-	if ( is_rtl() ) {
-		wp_enqueue_style( 'rtl-css', get_template_directory_uri() . '/assets/css/rtl.css', 'rtl_css', $version );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'blockstarter_scripts' );
 
@@ -152,7 +148,6 @@ function blockstarter_scripts_admin( $hook ) {
 	);
 }
 add_action( 'admin_enqueue_scripts', 'blockstarter_scripts_admin' );
-
 
 function blockstarter_call_to_action_markup() {
 
