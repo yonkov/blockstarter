@@ -155,9 +155,9 @@ function blockstarter_call_to_action_markup() {
 	$user_id = $current_user->ID;
 	$theme_homepage = 'https://nasiothemes.com/themes/blockstarter';
 
-	if ( ! get_user_meta( $user_id, 'blockstarter_hide_admin_notice' ) ) : ?>
+	if ( ! get_user_meta( $user_id, 'blockstarter_hide_admin_notice2' ) ) : ?>
 	<div id="message" class="notice notice-success nasiothemes-notice nasiothemes-welcome-notice">
-		<a class="nasiothemes-message-close notice-dismiss" href="?blockstarter_hide_admin_notice=0"></a>
+		<a class="nasiothemes-message-close notice-dismiss" href="?blockstarter_hide_admin_notice2=0"></a>
 
 		<div class="nasiothemes-message-content">
 			<div class="nasiothemes-message-image">
@@ -193,8 +193,8 @@ add_action( 'admin_notices', 'blockstarter_call_to_action_markup' );
 function blockstarter_dismiss_admin_notice() {
 	global $current_user;
 	$user_id = $current_user->ID;
-	if ( isset( $_GET['blockstarter_hide_admin_notice'] ) && '0' === $_GET['blockstarter_hide_admin_notice'] ) {
-		add_user_meta( $user_id, 'blockstarter_hide_admin_notice', 'true', true );
+	if ( isset( $_GET['blockstarter_hide_admin_notice2'] ) && '0' === $_GET['blockstarter_hide_admin_notice2'] ) {
+		add_user_meta( $user_id, 'blockstarter_hide_admin_notice2', 'true', true );
 	}
 }
 add_action( 'admin_init', 'blockstarter_dismiss_admin_notice' );

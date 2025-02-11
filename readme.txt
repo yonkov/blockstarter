@@ -2,7 +2,7 @@
 Contributors: nravota12
 Tags: blog, education, photography, one-column, two-columns, three-columns, wide-blocks, block-patterns, block-styles, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, sticky-post, style-variations, translation-ready
 Requires at least: 6.1
-Tested up to: 6.4
+Tested up to: 6.7
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,6 +27,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.1.7 - February 2025 =
+* Updated docs
 
 = 1.1.6 - August 2024 =
 * Fix rtl styles
